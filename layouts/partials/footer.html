@@ -17,7 +17,7 @@
 
       {{ if .Site.Title }}
         &nbsp;&bull;&nbsp;
-        <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+        <a href="{{ "" | absLangURL }}">{{ safeHTML .Site.Title }}</a>
       {{ end }}
     </p>
   </footer>
